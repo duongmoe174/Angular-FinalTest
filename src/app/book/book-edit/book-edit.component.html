@@ -1,0 +1,20 @@
+<h1>Edit Book</h1>
+<form [formGroup]="bookForm" (ngSubmit)="onSubmitEdit()">
+  <div class="container">
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" formControlName="title" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Author</label>
+      <input type="text" formControlName="author" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input type="text" formControlName="description" class="form-control">
+    </div>
+    <div>
+      <button class="btn btn-primary" type="submit">Edit</button>
+    </div>
+  </div>
+</form>
