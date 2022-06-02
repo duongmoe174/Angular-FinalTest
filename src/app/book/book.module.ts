@@ -7,6 +7,7 @@ import {BookEditComponent} from "./book-edit/book-edit.component";
 import {BookCreateComponent} from "./book-create/book-create.component";
 import {BookDeleteComponent} from "./book-delete/book-delete.component";
 import {ReactiveFormsModule} from "@angular/forms";
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     BookListComponent,
     BookEditComponent,
     BookCreateComponent,
-    BookDeleteComponent
+    BookDeleteComponent,
+    BookDetailComponent
   ],
   imports: [
     CommonModule,
