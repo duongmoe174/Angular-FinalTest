@@ -19,7 +19,7 @@ export class BookEditComponent implements OnInit {
 
   constructor(private bookService: BookService, private router: Router, private activatedRouter: ActivatedRoute) {
     this.activatedRouter.paramMap.subscribe((paraMap) => {
-      // @ts-ignore
+// @ts-ignore
       this.id = +paraMap.get('id');
       this.getBookById(this.id);
     })

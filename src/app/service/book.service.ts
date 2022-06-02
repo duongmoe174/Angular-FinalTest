@@ -24,7 +24,7 @@ export class BookService {
     return this.http.post<Book>(API_URL+'/books', book);
   }
 
-  editBook(book: any, id: number): Observable<Book> {
+  editBook(id: number, book: any): Observable<Book> {
     return this.http.put<Book>(`${API_URL}/books/${id}`, book);
   }
 
